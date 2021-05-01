@@ -1,0 +1,32 @@
+[include]
+    path = ~/.gitalias
+    path = ~/.gitconfig_local
+
+[clean]
+    requireforce = false
+
+[core]
+    autocrlf = true
+
+[difftool]
+    prompt = false
+
+[fetch]
+    prune = false
+
+[mergetool]
+    keepbackup = false
+
+[pull]
+    rebase = true
+
+[rebase]
+    autostash = false
+    autosquash = true
+
+[rerere]
+    enabled = true
+    autoupdate = true
+
+[user]
+    name = Matthias Schmidt

@@ -1,0 +1,39 @@
+[alias]
+    a = add
+    ap = add --patch
+
+    cim  = commit -m
+    cia  = commit --ammend
+    cian = commit --amend --no-edit
+
+    d   = diff
+    dw  = diff --word-diff
+    ds  = diff --staged
+    dsw = diff --staged --word-diff
+    dt  = difftool
+
+    f   = fetch
+    fa  = fetch --all
+    fap = fetch --all --prune
+
+    fixup = commit --fixup
+
+    ignore = update-index --skip-worktree
+    unignore = update-index --no-skip-worktree
+    ignored = !git ls-files -v . | findstr "^S"
+
+    lg = log --oneline --max-count=30 --decorate --exclude=refs/stash --graph
+    ll = log --oneline --max-count=50 --decorate --exclude=refs/stash
+
+    mt = mergetool
+
+    r = restore
+    rp = restore --patch
+    rs = restore --staged
+
+    s = status
+
+    smu  = submodule update --init
+    smur = submodule update --init --recursive
+
+    sw = switch

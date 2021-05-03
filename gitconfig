@@ -19,6 +19,9 @@
 
 [pull]
     rebase = true
+    
+[push]
+    followtags = true
 
 [rebase]
     autostash = false

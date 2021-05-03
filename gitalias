@@ -2,6 +2,9 @@
     a = add
     ap = add --patch
 
+    c  = clean -xdf
+    cn = clean -xdfn
+
     cim  = commit -m
     cia  = commit --ammend
     cian = commit --amend --no-edit
@@ -18,9 +21,9 @@
 
     fixup = commit --fixup
 
-    ignore = update-index --skip-worktree
+    ignore   = update-index --skip-worktree
+    ignored  = !git ls-files -v . | findstr "^S"
     unignore = update-index --no-skip-worktree
-    ignored = !git ls-files -v . | findstr "^S"
 
     lg = log --oneline --max-count=30 --decorate --exclude=refs/stash --graph
     ll = log --oneline --max-count=50 --decorate --exclude=refs/stash

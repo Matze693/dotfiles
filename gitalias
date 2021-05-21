@@ -35,6 +35,7 @@
     rs = restore --staged
 
     s = status
+    ss = status --short
 
     smu  = submodule update --init
     smur = submodule update --init --recursive

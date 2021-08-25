@@ -6,7 +6,7 @@
     cn = clean -xdfn
 
     cim  = commit -m
-    cia  = commit --ammend
+    cia  = commit --amend
     cian = commit --amend --no-edit
 
     d   = diff
